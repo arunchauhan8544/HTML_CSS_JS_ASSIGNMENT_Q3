@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="counter"></div>
+    <button id="btn" >add counter</button>
+    <script>
+    const mybutton=document.getElementById('btn');
+    const counter=document.getElementById('counter');
+    mybutton.addEventListener('click',()=>{
+        let newelement=document.createElement('p');
+        newelement.innerHTML=0;
+        
+        counter.append(newelement);
+        
+        
+    })
+    setInterval(increment,1000);
+function increment(){
+    const element=document.getElementsByTagName('p');
+        for(let i in element)
+         {element[i].innerHTML++}}
+    </script>
+</body>
+</html>
